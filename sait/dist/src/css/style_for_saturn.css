@@ -1,0 +1,612 @@
+
+html, body {
+    overflow-x: hidden;
+}
+body{
+	background: url(../img/фон6.png);
+	margin: 0;
+}
+h1{
+	color: white;
+	font-size: 50px;
+	font-style: italic;
+	margin-left: -15px;
+}
+ .zag2{
+ 	color:	#9400D3;
+ }
+.zag1{
+	width: 1000px;
+	padding-left: 90px;
+}
+
+a img{
+	height: 45px;
+	width:45px;
+	position: absolute;	
+
+}
+.menu{
+	display: flex;
+	margin-top: -60px;
+	margin-left: 60px;
+    z-index: 2;
+
+}
+.menu-btn{
+	width: 45px;
+	height: 45px;
+	margin-top: 0px;
+	background-color: #fff;
+	border-radius: 50%;
+	position: relative;
+	z-index: 100;
+}
+.menu-btn span, 
+.menu-btn span::before,
+.menu-btn span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #222;
+}
+.menu-btn span::before,
+.menu-btn span::after {
+	content: '';
+	transition: 0.2s;
+}
+.menu-btn span::before {
+ transform: translateY(-5px);
+}
+.menu-btn span::after {
+ transform: translateY(5px);
+}
+.menu-btn_active span::before{
+	transform: rotate(-35deg);
+	transform-origin: left bottom;
+	width: 10px;
+}
+.menu-btn_active span::after{
+	width: 10px;
+	transform: rotate(35deg);
+	transform-origin: left top;
+}
+.menu-block{
+	display: flex;
+	justify-content: left;
+	position: fixed;
+	transition: 0.2s;
+	transform: translateX(-86%);
+}
+.menu-nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 50%;
+	flex-direction: column;
+	background: white;
+	border-radius: 10%;
+}
+.menu_block_active{
+    transform: translateX(0%);
+    border-radius:7%;
+}
+
+.menu-nav a{
+	margin: 10px;
+	text-decoration: none;
+	font-weight: 500;
+}
+.nachalo{
+	color: white;
+	margin-left: 75px;
+	margin-right: 75px;
+
+}
+.vvedenie{	
+	margin-left: 75px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color:white;
+	flex-direction: column;
+	display: flex;
+	border-left: 2px solid blue;
+}
+.vvedenie a{
+	text-decoration: none;
+	margin-left: 20px;
+	font-style: italic;
+}
+.asd{
+	width: 20px;
+}
+.asdv{
+	width: 140px;
+}
+.asdvc{
+   width: 170px;
+}
+.annotation{
+	display: flex;
+	line-height: 70px;
+	font-style: italic;
+	height: 70px;
+	background: #D3D3D3;	
+}
+.annotation span{
+	margin-left: 300px;
+}
+.vk{
+	margin-left: 300px;
+}
+.vk img{
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+}
+.inst{
+	margin-left: 50px;
+}
+.inst img{
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+}
+@media (max-width: 2560px)  {
+	.photo_saturn{
+		width: 1300px;
+       height: 1300px;
+	}
+	.stroenie_saturn{
+		width: 1300px;
+       height: 1300px;
+	}
+	.risunok_saturn{
+		width: 1300px;
+       height: 1300px;
+	}
+    .nachalo{
+    	font-size: 24px;
+    }
+                        .annotation{
+    display: inline;
+    font-style: italic;
+    height: 40px;
+    background: #D3D3D3;    
+}
+.annotation span{
+
+}
+.vk{
+    margin-left: 1020px;
+}
+.vk img{
+    width: 35px;
+    height: 35px;
+    margin-top: -50px;
+    
+}
+.inst{
+    margin-left: 980px;
+}
+.inst img{
+    width: 35px;
+    height: 35px;
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+}
+@media (min-width: 1025px) and (max-width: 1439px){
+	.photo_saturn{
+		width: 1024px;
+       height: 1024px;
+	}
+	.stroenie_saturn{
+		width: 1024px;
+       height: 1024px;
+	}
+	.risunok_saturn{
+		width: 1024px;
+       height: 1024px;
+	}
+    .nachalo{
+    	font-size: 20px;
+    }
+                	.annotation{
+	display: inline;
+	font-style: italic;
+	height: 40px;
+	background: #D3D3D3;	
+}
+.annotation span{
+
+}
+.vk{
+	margin-left: 1020px;
+}
+.vk img{
+    width: 35px;
+    height: 35px;
+    margin-top: -50px;
+    
+}
+.inst{
+	margin-left: 980px;
+}
+.inst img{
+    width: 35px;
+    height: 35px;
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+}
+@media (max-width: 1024px){
+	.nachalo{
+    	font-size: 18px;
+    }
+	.photo_saturn{
+		width: 824px;
+       height: 824px;
+	}
+	.stroenie_saturn{
+		width: 824px;
+       height: 824px;
+	}
+	.risunok_saturn{
+		width: 824px;
+       height: 824px;
+	}
+        	.annotation{
+	display: inline;
+	font-style: italic;
+	height: 70px;
+	background: #D3D3D3;	
+}
+.annotation span{
+	margin-left: 440px;
+}
+.vk{
+	margin-left: 520px;
+}
+.vk img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    
+}
+.inst{
+	margin-left: 480px;
+}
+.inst img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+}
+
+@media (max-width: 856px)  {
+	.photo_saturn{
+	   width: 624px;
+       height: 624px;
+	}
+	.stroenie_saturn{
+	   width: 624px;
+       height: 624px;
+	}
+	.risunok_saturn{
+	   width: 624px;
+       height: 624px;
+	}
+	    	.annotation{
+	display: inline;
+	font-style: italic;
+	height: 70px;
+	background: #D3D3D3;	
+}
+.annotation span{
+	margin-left: 350px;
+}
+.vk{
+	margin-left: 430px;
+}
+.vk img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    
+}
+.inst{
+	margin-left: 390px;
+}
+.inst img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+}
+@media (max-width: 768px)  {
+	.annotation{
+	display: inline;
+	font-style: italic;
+	height: 70px;
+	background: #D3D3D3;	
+}
+.annotation span{
+	margin-left: 310px;
+}
+.vk{
+	margin-left: 390px;
+}
+.vk img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    
+}
+.inst{
+	margin-left: 350px;
+}
+.inst img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+}
+@media (max-width: 700px) {
+	.nachalo{
+    	font-size: 16px;
+    }
+    .photo_saturn{
+	   width: 468px;
+       height: 468px;
+	}
+	.stroenie_saturn{
+	   width: 468px;
+       height: 468px;
+	}
+	.risunok_saturn{
+	   width: 468px;
+       height: 468px;
+	}
+	.annotation{
+	display: inline;
+	font-style: italic;
+	height: 70px;
+	background: #D3D3D3;	
+}
+.annotation span{
+	margin-left: 275px;
+}
+.vk{
+	margin-left: 355px;
+}
+.vk img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    
+}
+.inst{
+	margin-left: 315px;
+}
+.inst img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+}
+@media (max-width: 545px) {
+	.photo_saturn{
+	   width: 390px;
+       height: 390px;
+	}
+	.stroenie_saturn{
+	   width: 390px;
+       height: 390px;
+	}
+	.risunok_saturn{
+	   width: 390px;
+       height: 390px;
+	}
+	.annotation{
+	display: inline;
+	font-style: italic;
+	height: 70px;
+	background: #D3D3D3;	
+}
+.annotation span{
+	margin-left: 200px;
+}
+.vk{
+	margin-left: 280px;
+}
+.vk img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    
+}
+.inst{
+	margin-left: 240px;
+}
+.inst img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+}
+@media (max-width: 466px) {
+	.photo_saturn{
+	   width: 343.2px;
+       height: 343.2px;
+	}
+	.stroenie_saturn{
+	   width: 343.2px;
+       height: 343.2px;
+	}
+	.risunok_saturn{
+	   width: 343.2px;
+       height: 343.2px;
+	}
+	.annotation{
+	display: inline;
+	font-style: italic;
+	height: 70px;
+	background: #D3D3D3;	
+}
+.annotation span{
+	margin-left: 160px;
+}
+.vk{
+	margin-left: 240px;
+}
+.vk img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    
+}
+.inst{
+	margin-left: 200px;
+}
+.inst img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+}
+@media (max-width: 425px) {
+	.photo_saturn{
+	   width: 312px;
+       height: 312px;
+	}
+	.stroenie_saturn{
+	   width: 312px;
+       height: 312px;
+	}
+	.risunok_saturn{
+	   width: 312px;
+       height: 312px;
+	}
+	.annotation{
+	display: inline;
+	font-style: italic;
+	height: 70px;
+	background: #D3D3D3;	
+}
+.annotation span{
+	margin-left: 140px;
+}
+.vk{
+	margin-left: 220px;
+}
+.vk img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    
+}
+.inst{
+	margin-left: 180px;
+}
+.inst img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+}
+@media (max-width: 375px) {
+	.photo_saturn{
+	   width: 265.2px;
+       height: 265.2px;
+	}
+	.stroenie_saturn{
+	   width: 265.2px;
+       height: 265.2px;
+	}
+	.risunok_saturn{
+	   width: 265.2px;
+       height: 265.2px;
+	}
+	.annotation{
+	display: inline;
+	font-style: italic;
+	height: 70px;
+	background: #D3D3D3;	
+}
+.annotation span{
+	margin-left: 115px;
+}
+.vk{
+	margin-left: 195px;
+}
+.vk img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    
+}
+.inst{
+	margin-left: 155px;
+}
+.inst img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+}
+@media (max-width: 320px) {
+	.photo_saturn{
+	   width: 218.4px;
+       height: 218.4px;
+	}
+	.stroenie_saturn{
+	   width: 218.4px;
+       height: 218.4px;
+	}
+	.risunok_saturn{
+	   width: 218.4px;
+       height: 218.4px;
+	}
+	.annotation{
+	display: inline;
+	font-style: italic;
+	height: 70px;
+	background: #D3D3D3;	
+}
+	.annotation span{
+	margin-left: 90px;
+}
+.vk{
+	margin-left: 170px;
+}
+.vk img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    
+}
+.inst{
+	margin-left: 130px;
+}
+.inst img{
+    width: 35px;
+    height: 35px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+}
